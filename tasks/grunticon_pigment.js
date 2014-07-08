@@ -12,16 +12,27 @@ module.exports = function(grunt) {
 
     var path = require( 'path' );
     var os = require( 'os' );
+    var pkg = grunt.file.readJSON( path.join( __dirname, "..", "package.json") );
 
     // load npmTasks from within plugin folder
+//    var cwd = process.cwd();
+//    process.chdir( path.join( __dirname, "..") );
+//    grunt.loadNpmTasks('grunt-contrib-clean');
+//    grunt.loadNpmTasks('grunt-contrib-copy');
+//    grunt.loadNpmTasks('grunt-grunticon');
+//    grunt.loadNpmTasks('grunt-dom-munger');
+//    grunt.loadNpmTasks('grunt-svgmin');
+//    grunt.loadNpmTasks('grunt-text-replace');
+//    process.chdir(cwd);
+
+    // The cool way to load your grunt tasks
     var cwd = process.cwd();
     process.chdir( path.join( __dirname, "..") );
-    grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-grunticon');
-    grunt.loadNpmTasks('grunt-dom-munger');
-    grunt.loadNpmTasks('grunt-svgmin');
-    grunt.loadNpmTasks('grunt-text-replace');
+    Object.keys( pkg.dependencies ).forEach( function( dep ){
+        if( dep.substring( 0, 6 ) === 'grunt-' ) {
+            grunt.loadNpmTasks( dep );
+        }
+    });
     process.chdir(cwd);
 
     grunt.registerMultiTask("grunticon_pigment", "A collection of grunt tasks around filamentgroup's grunt-grunticon. Creates colourised versions of svg images.", function() {
