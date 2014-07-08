@@ -1,0 +1,42 @@
+tmp/**
+.metadata
+tmp/**/*
+Thumbs.db
+Desktop.ini
+*.sass-cache
+node_modules/*
+*.tmp
+*.bak
+*.swp
+*.class
+*.jar
+# IntelliJ IDEA files
+*.iml
+.idea
+*.svn
+*.apk
+*.project
+## project.properties
+local.properties
+*.class
+*.dex
+# IOS / Xcode
+build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xcworkspace
+!default.xcworkspace
+xcuserdata
+profile
+*.moved-aside
+IOS/www/
+# OSX
+.DS_Store
+## Platform stuff
+platforms/**

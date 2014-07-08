@@ -1,0 +1,51 @@
+{
+    "name": "grunt-grunticon-pigment",
+    "description": "A collection of grunt tasks around filamentgroup's grunt-grunticon. Creates colourised versions of svg images.",
+    "version": "0.1.0",
+    "homepage": "https://github.com/springload/grunticon-pigment",
+    "author": {
+        "name": "Thomas Winter",
+        "email": "thomas@springload.co.nz",
+        "url": "http://www.springload.co.nz"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/springload/grunticon-pigment"
+    },
+    "bugs": {
+        "url": "https://github.com/springload/grunticon-pigment/issues"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/springload/grunticon-pigment/blob/master/LICENSE-MIT"
+        }
+    ],
+    "engines": {
+        "node": ">= 0.8.0"
+    },
+    "scripts": {
+        "test": "grunt test"
+    },
+    "dependencies": {
+        "grunt-contrib-clean": "~0.5.0",
+        "grunt-contrib-copy": "~0.4.1",
+        "grunt-grunticon": "*",
+        "grunt-dom-munger": "*",
+        "grunt-svgmin": "*",
+        "grunt-text-replace": "*"
+    },
+    "devDependencies": {
+        "grunt-cli": "~0.1",
+        "grunt-contrib-clean": "~0.5.0",
+        "grunt-contrib-jshint": "~0.6.0",
+        "grunt-contrib-nodeunit": "~0.2.0",
+        "grunt": "~0.4.5"
+    },
+    "peerDependencies": {
+        "grunt": "~0.4.5"
+    },
+    "keywords": [
+        "gruntplugin"
+    ]
+}
