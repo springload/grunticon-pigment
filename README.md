@@ -1,6 +1,6 @@
 # grunt-grunticon-pigment
 
-> Fork of filamentgroup grunt-grunticon. Creates  colourised versions of svg icons..
+> A collection of grunt tasks around filamentgroup's grunt-grunticon. Creates colourised versions of svg images.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
