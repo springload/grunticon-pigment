@@ -65,8 +65,8 @@ module.exports = function(grunt) {
                     },
 
                     // templates for css output and preview page
-                    template: "template/default-css.hbs",
-                    previewTemplate:  "template/preview-custom.hbs"
+                    template: "examples/default-css.hbs",
+                    previewTemplate:  "examples/preview-custom.hbs"
 
                 }
             }

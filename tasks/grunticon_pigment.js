@@ -14,17 +14,6 @@ module.exports = function(grunt) {
     var os = require( 'os' );
     var pkg = grunt.file.readJSON( path.join( __dirname, "..", "package.json") );
 
-    // load npmTasks from within plugin folder
-//    var cwd = process.cwd();
-//    process.chdir( path.join( __dirname, "..") );
-//    grunt.loadNpmTasks('grunt-contrib-clean');
-//    grunt.loadNpmTasks('grunt-contrib-copy');
-//    grunt.loadNpmTasks('grunt-grunticon');
-//    grunt.loadNpmTasks('grunt-dom-munger');
-//    grunt.loadNpmTasks('grunt-svgmin');
-//    grunt.loadNpmTasks('grunt-text-replace');
-//    process.chdir(cwd);
-
     // The cool way to load your grunt tasks
     var cwd = process.cwd();
     process.chdir( path.join( __dirname, "..") );
@@ -39,9 +28,9 @@ module.exports = function(grunt) {
 
         // get the config
         var config = this.options({
-            datasvgcss: "icons.data.svg.css",
-            datapngcss: "icons.data.png.css",
-            urlpngcss: "icons.fallback.css",
+            datasvgcss: "icons-data-svg.css",
+            datapngcss: "icons-data-png.css",
+            urlpngcss: "icons-fallback.css",
             previewhtml: "preview.html",
             customselectors: {},
             cssprefix: ".i-",
@@ -56,7 +45,7 @@ module.exports = function(grunt) {
             svgColorFolder: "source-colourise",
             distDir: "grunticon-dist",
             tmpDir: "grunticon-tmp",
-            previewTemplate: path.join( __dirname, "..", "templates", "preview.hbs" )
+            previewTemplate: path.join( __dirname, "..", "examples", "preview.hbs" )
         });
 
         config.src = this.files[0].orig.cwd;
