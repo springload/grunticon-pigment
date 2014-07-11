@@ -31,15 +31,15 @@ module.exports = function(grunt) {
                 options: {
 
                     // CSS filenames
-                    datasvgcss: "icons.data.svg.css",
-                    datapngcss: "icons.data.png.css",
-                    urlpngcss: "icons.fallback.css",
+                    datasvgcss: "icons-data-svg.css",
+                    datapngcss: "icons-data-png.css",
+                    urlpngcss: "icons-fallback.css",
 
                     // preview HTML filename
-                    previewhtml: "icons.preview.html",
+                    previewhtml: "icons-preview.html",
 
                     // grunticon loader code snippet filename
-                    loadersnippet: "grunticon.loader.js",
+                    loadersnippet: "grunticon-loader.js",
 
                     // folder name (within cwd) for svg files
                     svgFolder: "source",
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
                     defaultHeight: "32px",
 
                     // colours for svg colourising
-                    svgColors: ["#ffffff", "#ff0000"],
+                    svgColors: ["#ffffff", "#A6CC85"],
 
                     // css file path prefix - this defaults to "/" and will be placed before the "dest" path when stylesheets are loaded.
                     // This allows root-relative referencing of the CSS. If you don't want a prefix path, set to to ""

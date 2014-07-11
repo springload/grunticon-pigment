@@ -1,6 +1,8 @@
-# grunt-grunticon-pigment
+# grunticon-pigment
 
-> A collection of grunt tasks around filamentgroup's grunt-grunticon. Creates colourised versions of svg images.
+> A collection of grunt tasks around filamentgroup's grunticon, that also creates colourised versions of svg images
+
+With grunticon-pigment we combined several grunt tasks into one handy plugin. It's basically copies [grunticon](https://github.com/filamentgroup/grunticon)'s funciontality, applies some new default values and adds the ability to create colour variations without significantly increasing filesize.
 
 ### A mystical CSS icon solution
 
@@ -48,7 +50,6 @@ grunt.initConfig({
 ```
 
 
-
 ### Options
 
 #### options.svgFolder
@@ -62,14 +63,16 @@ Type: `String`
 Default value: `"source-colourise"`
 
 The name of the folder containing the source svg files that get colourised.
-Please note, that the elements of the svg files must be within one grouped element at root level.
-Only shapes will be colourised, so make sure, that strokes are converted to shapes.
+
+*Please note* All elements of the svg files must be within one grouped element at root level.
+Only shapes will be colourised, so make sure, to convert strokes into outlines (Object > Path > Outline Stroke in Illustrator) before saving your svg.
+Please also have a look at [Creating SVG Artwork](#creating-svg-artwork) in the Tips section.
 
 #### options.svgColors
 Type: `Array`
-Default value: `"source-colourise"`
+Default value: `"[]"`
 
-Defines the colour variations.
+Array of colour variations in hex format.
 
 #### options.datasvgcss
 Type: `String`
@@ -318,7 +321,7 @@ grunt.initConfig({
         defaultHeight: "32px",
 
         // colours for svg colourising
-        svgColors: ["#ffffff", "#ff0000"],
+        svgColors: ["#ffffff", "#A6CC85"],
 
         // css file path prefix - this defaults to "/" and will be placed before the "dest" path when stylesheets are loaded.
         // This allows root-relative referencing of the CSS. If you don't want a prefix path, set to to ""
@@ -394,6 +397,7 @@ In the Save SVG dialog that opens up, there are lots of options. SVG has a ton o
 - Subsetting: None, I usually convert all text to outlines ahead of time
 - Images: Embed
 - Don't check "Preserve Illustrator editing" to reduce file size
+- Don't check "Responsive" unless you want the fallback pngs to get defaultWidth and defaultHeight.
 
 ## Warnings
 * If your files have `#`, `.`, `>`, or any other css selecting character in their names, they will likely be improperly processed.

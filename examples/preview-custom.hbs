@@ -8,6 +8,29 @@
 				width: 100%;
 				background-size: 10px 10px;
 			}
+			/*
+				some default styles for our icon class
+			*/
+			.i {
+			    display: .inline-block;
+
+			    width: 1em;
+			    height: 1em;
+
+			    background-size: cover;
+			}
+
+			/*
+				colours get applied changing the background position of the icon element
+				note that the vertical background position depends on the number of colours you define in your gruntfile
+			*/
+			.i--white {
+			    background-position: 0 50%;
+			}
+			.i--green {
+			    background-position: 0 100%;
+			}
+
 		</style>
 		<script>
 			{{{loaderText}}}
@@ -18,7 +41,7 @@
 	<body>
 		{{#each icons}}
 			{{#with this}}
-			<pre><code>{{prefix}}{{name}}:</code></pre><div class="{{prefixClass}}{{name}}" style="width: {{width}}px; height: {{height}}px;" ></div><hr/>
+			<pre><code>{{prefix}}{{name}}:</code></pre><div class="i {{prefixClass}}{{name}}" style="width: {{width}}px; height: {{height}}px;" ></div><hr/>
 			{{/with}}
 		{{/each}}
 </body>
