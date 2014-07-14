@@ -76,31 +76,31 @@ Array of colour variations in hex format.
 
 #### options.datasvgcss
 Type: `String`
-Default value: `"icons.data.svg.css"`
+Default value: `"icons-data-svg.css"`
 
 The name of the generated CSS file containing SVG data uris.
 
 #### options.datapngcss
 Type: `String`
-Default value: `"icons.data.png.css"`
+Default value: `"icons-data-png.css"`
 
 The name of the generated CSS file containing PNG data uris.
 
 #### options.urlpngcss
 Type: `String`
-Default value: `"icons.fallback.css"`
+Default value: `"icons-fallback.css"`
 
 The name of the generated CSS file containing external png url references.
 
 #### options.previewhtml
 Type: `String`
-Default value: `"icons.preview.html"`
+Default value: `"icons-preview.html"`
 
 The name of the generated HTML preview file.
 
 #### options.loadersnippet
 Type: `String`
-Default value: `"grunticon.loader.txt"`
+Default value: `"grunticon-loader.txt"`
 
  The name of the generated text file containing the grunticon loading snippet.
 
@@ -127,7 +127,7 @@ Example:
 Will generate PNG fallbacks like:
 
 ```
-.icon-bar {
+.i-bar {
 	background-image: url('/assets/icons/png/bar.png');
 	background-repeat: no-repeat;
 }
@@ -148,16 +148,16 @@ Example:
 
 ```
 {
-	"foo": [".icon-bar", ".baz"]
+	"foo": [".i-bar", ".baz"]
 }
 ```
 
 will produce:
 
 ```
-.icon-bar,
+.i-bar,
 .bar,
-.icon-foo {
+.i-foo {
 	//css
 }
 ```
@@ -168,17 +168,17 @@ Examples:
 
 ```
 customselectors: {
-  "*": [".icon-$1:before", ".icon-$1-what", ".hey-$1"]
+  "*": [".i-$1:before", ".i-$1-what", ".hey-$1"]
 },
-prefix: ".icon-"
+prefix: ".i-"
 ```
 
 Should give the file bear.svg the css
 ```
-.icon-bear:before,
-.icon-bear-what,
+.i-bear:before,
+.i-bear-what,
 .hey-bear,
-.icon-bear {
+.i-bear {
  // CSS THINGS
 }
 ```
@@ -186,17 +186,17 @@ Should give the file bear.svg the css
 And if there are files bear.svg and cat.svg, the css should be like:
 
 ```
-.icon-bear:before,
-.icon-bear-what,
+.i-bear:before,
+.i-bear-what,
 .hey-bear,
-.icon-bear {
+.i-bear {
  // CSS THINGS
 }
 
-.icon-cat:before,
-.icon-cat-what,
+.i-cat:before,
+.i-cat-what,
 .hey-cat,
-.icon-cat {
+.i-cat {
  // CSS THINGS
 }
 ```
@@ -235,9 +235,9 @@ Takes a path to the template that will be used for the preview.html. Example of 
     </style>
     <script>
       {{{loaderText}}}
-      grunticon(["icons.data.svg.css", "icons.data.png.css", "icons.fallback.css"]);
+      grunticon(["icons-data-svg.css", "icons-data-png.css", "icons-fallback.css"]);
     </script>
-  <noscript><link href="icons.fallback.css" rel="stylesheet"></noscript>
+  <noscript><link href="icons-fallback.css" rel="stylesheet"></noscript>
   </head>
   <body>
     {{#each icons}}
