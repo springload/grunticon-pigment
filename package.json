@@ -1,7 +1,7 @@
 {
     "name": "grunt-grunticon-pigment",
     "description": "A collection of grunt tasks around filamentgroup's grunt-grunticon. Creates colourised versions of svg images.",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "homepage": "https://github.com/springload/grunticon-pigment",
     "author": {
         "name": "Thomas Winter",
