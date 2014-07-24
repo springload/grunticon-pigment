@@ -1,7 +1,7 @@
 {
     "name": "grunt-grunticon-pigment",
     "description": "A collection of grunt tasks around filamentgroup's grunt-grunticon. Creates colourised versions of svg images.",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "homepage": "https://github.com/springload/grunticon-pigment",
     "author": {
         "name": "Thomas Winter",
@@ -48,7 +48,7 @@
     },
 
     "scripts" : {
-        "postinstall" : "npm install node_modules/grunt-grunticon/node_modules/svg-to-png/node_modules/phantomjs --prefix node_modules/grunt-grunticon/node_modules/svg-to-png/node_modules/phantomjs/node_modules"
+        "postinstall" : "rm -rf ./node_modules/grunt-grunticon/node_modules/svg-to-png/node_modules/phantomjs && npm install ./node_modules/grunt-grunticon/node_modules/svg-to-png --prefix ./node_modules/grunt-grunticon/node_modules"
     },
 
     "keywords": [
