@@ -408,4 +408,5 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 
 ## Release History
+* Version 0.2.5: Upgraded npm dependencies and removed postinstall script
 * Version 0.2.0: First stable release
