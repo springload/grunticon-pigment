@@ -34,15 +34,20 @@
 		</style>
 		<script>
 			{{{loaderText}}}
-			grunticon(["icons-data-svg.css", "icons-data-png.css", "icons-fallback.css"]);
+			{{{embedText}}}
+			{{#with cssFiles}}
+			grunticon(["{{svg}}", "{{png}}", "{{fallback}}"], grunticon.svgLoadedCallback);
 		</script>
-	<noscript><link href="icons-fallback.css" rel="stylesheet"></noscript>
+		<noscript><link href="{{fallback}}" rel="stylesheet"></noscript>
+            {{/with}}
+
 	</head>
 	<body>
-		{{#each icons}}
-			{{#with this}}
-			<pre><code>{{prefix}}{{name}}:</code></pre><div class="i {{prefixClass}}{{name}}" style="width: {{width}}px; height: {{height}}px;" ></div><hr/>
-			{{/with}}
-		{{/each}}
+        {{#each icons}}
+            {{#with this}}
+            <pre><code>{{prefix}}{{name}}:</code></pre><div {{selectorType}}="{{selectorString}}{{name}}" style="width: {{width}}px; height: {{height}}px;" ></div><hr/>
+            {{/with}}
+        {{/each}}
+
 </body>
 </html>
