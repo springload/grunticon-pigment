@@ -3,4 +3,9 @@ node_js:
 - '0.12'
 - '0.10'
 - '4'
-- 'node'
+- node
+notifications:
+  email: false
+  slack:
+    rooms:
+      secure: LSq/b4OhAGlPN2p9XMMZpnRFeZRzcApohryIHI17mW2GnVsMdC5Ycxw9qah39y3oO+PmNdPR0zkQipUyLAYNsiPQvPHjHiTBnGnRt/qE3LxwJmMHerlAnsbWMS+1NSW90wSgvEV26loRrGIEitIpnc+K1D3o9M5zOam708MMXFM=
