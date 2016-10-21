@@ -1,4 +1,5 @@
-# grunticon-pigment
+grunt-grunticon-pigment [![npm](https://img.shields.io/npm/v/grunt-grunticon-pigment.svg?style=flat-square)](https://www.npmjs.com/package/grunt-grunticon-pigment) [![Build Status](https://img.shields.io/travis/springload/grunt-grunticon-pigment.svg?style=flat-square)](https://travis-ci.org/springload/grunt-grunticon-pigment)
+===========================
 
 > A collection of grunt tasks around filamentgroup's grunticon, that also creates colourised versions of svg images
 
@@ -405,8 +406,7 @@ In the Save SVG dialog that opens up, there are lots of options. SVG has a ton o
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
-
-
 ## Release History
+
 * Version 0.2.5: Upgraded npm dependencies and removed postinstall script
 * Version 0.2.0: First stable release
