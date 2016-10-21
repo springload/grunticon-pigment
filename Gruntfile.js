@@ -12,10 +12,6 @@ module.exports = function(grunt) {
 
     // Project configuration.
     grunt.initConfig({
-
-        nodeunit: {
-            files: ['test/**/*_test.js']
-        },
         watch: {
             files: '<config:lint.files>',
             tasks: 'default'
@@ -92,11 +88,10 @@ module.exports = function(grunt) {
     grunt.loadTasks('tasks');
 
     grunt.loadNpmTasks( 'grunt-contrib-jshint' );
-    grunt.loadNpmTasks( 'grunt-contrib-nodeunit' );
 
     // Default task.
-    grunt.registerTask('skip-tests', ['jshint', 'grunticon:foo']);
-    grunt.registerTask('travis', ['jshint', 'svgmin', 'grunticon:foo', 'nodeunit']);
+    grunt.registerTask('skip-tests', ['jshint', 'grunticon_pigment:foo']);
+    grunt.registerTask('travis', ['jshint', 'svgmin', 'grunticon_pigment:foo']);
     grunt.registerTask('default', ['travis']);
 
 };
