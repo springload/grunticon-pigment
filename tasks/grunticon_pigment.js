@@ -23,8 +23,7 @@ module.exports = function(grunt) {
     });
     process.chdir(cwd);
 
-    var description = "A collection of grunt tasks around filamentgroup's grunt-grunticon. Creates colourised versions of svg images.";
-    grunt.registerMultiTask("grunticon_pigment", description, function() {
+    grunt.registerMultiTask("grunticon_pigment", pkg.description, function() {
 
         // get the config
         var config = this.options({
@@ -194,9 +193,5 @@ module.exports = function(grunt) {
         grunt.task.run('replace:icons');
         grunt.task.run('copy:grunticons');
         grunt.task.run('clean:build');
-
     });
-
-
-
 };

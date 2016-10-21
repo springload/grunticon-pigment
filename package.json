@@ -41,6 +41,7 @@
   ],
   "scripts": {
     "lint": "jshint Gruntfile.js tasks/*.js",
-    "test": "grunt grunticon_pigment:foo"
+    "example": "grunt grunticon_pigment:foo",
+    "test": "npm run lint -s && npm run example -s"
   }
 }
