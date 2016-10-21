@@ -83,11 +83,6 @@ module.exports = function(grunt) {
     // Load local tasks.
     grunt.loadTasks('tasks');
 
-    grunt.loadNpmTasks( 'grunt-contrib-jshint' );
-
     // Default task.
-    grunt.registerTask('skip-tests', ['jshint', 'grunticon_pigment:foo']);
-    grunt.registerTask('travis', ['jshint', 'svgmin', 'grunticon_pigment:foo']);
-    grunt.registerTask('default', ['travis']);
-
+    grunt.registerTask('default', ['grunticon_pigment:foo']);
 };
