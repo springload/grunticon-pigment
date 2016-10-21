@@ -9,11 +9,6 @@ module.exports = function(grunt) {
             css: 'result/',
         },
 
-        watch: {
-            files: '<config:lint.files>',
-            tasks: 'default'
-        },
-
         grunticon_pigment: {
             foo: {
                 files: [{
@@ -61,16 +56,6 @@ module.exports = function(grunt) {
                     previewTemplate:  "<%= paths.grunticons %>preview.hbs"
 
                 }
-            }
-        },
-        jshint: {
-            all: [
-                'Gruntfile.js',
-                'tasks/*.js',
-                'lib/*.js'
-            ],
-            options: {
-                jshintrc: '.jshintrc'
             }
         },
 
