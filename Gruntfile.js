@@ -1,11 +1,3 @@
-/*
- * grunt-grunticon-pigment
- * https://github.com/springload/grunticon-pigment
- *
- * Copyright (c) 2014 Thomas Winter
- * Licensed under the MIT license.
- */
-
 'use strict';
 
 module.exports = function(grunt) {
