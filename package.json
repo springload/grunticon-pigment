@@ -48,7 +48,6 @@
         "fallback"
     ],
     "scripts": {
-        "postinstall" : "npm install ./node_modules/grunt-grunticon/node_modules/svg-to-png --prefix ./node_modules/grunt-grunticon",
         "test": "grunt grunticon_pigment:foo"
     }
 }
