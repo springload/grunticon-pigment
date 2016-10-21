@@ -15,9 +15,6 @@
     "engines": {
         "node": ">= 0.10.0"
     },
-    "scripts": {
-        "postinstall" : "npm install ./node_modules/grunt-grunticon/node_modules/svg-to-png --prefix ./node_modules/grunt-grunticon"
-    },
     "dependencies": {
         "grunt-contrib-clean": "~0.6.0",
         "grunt-contrib-copy": "~0.8.0",
@@ -43,5 +40,9 @@
         "icons",
         "svg",
         "fallback"
-    ]
+    ],
+    "scripts": {
+        "postinstall" : "npm install ./node_modules/grunt-grunticon/node_modules/svg-to-png --prefix ./node_modules/grunt-grunticon",
+        "test": "grunt grunticon_pigment:foo"
+    }
 }
