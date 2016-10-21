@@ -1,53 +1,46 @@
 {
-    "name": "grunt-grunticon-pigment",
-    "description": "A collection of grunt tasks around filamentgroup's grunt-grunticon. Creates colourised versions of SVG images.",
-    "version": "0.2.8",
-    "license": "MIT",
-    "author": "Springload",
-    "homepage": "https://github.com/springload/grunticon-pigment",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/springload/grunticon-pigment"
-    },
-    "bugs": {
-        "url": "https://github.com/springload/grunticon-pigment/issues"
-    },
-    "engines": {
-        "node": ">= 0.10.0"
-    },
-    "dependencies": {
-        "grunt-contrib-clean": "~0.6.0",
-        "grunt-contrib-copy": "~0.8.0",
-        "grunt-grunticon": "~2.2.0",
-        "grunt-dom-munger": "~3.4.0",
-        "grunt-svgmin": "~2.0.1",
-        "grunt-text-replace": "~0.4.0"
-    },
-    "bundledDependencies": [
-        "grunt-contrib-clean",
-        "grunt-contrib-copy",
-        "grunt-grunticon",
-        "grunt-dom-munger",
-        "grunt-svgmin",
-        "grunt-text-replace"
-    ],
-    "devDependencies": {
-        "grunt": "~0.4.5",
-        "grunt-cli": "~0.1.13",
-        "grunt-contrib-jshint": "~0.11.0"
-    },
-    "peerDependencies": {
-        "grunt": ">=0.4.0"
-    },
-    "keywords": [
-        "grunt",
-        "gruntplugin",
-        "grunticon",
-        "icons",
-        "svg",
-        "fallback"
-    ],
-    "scripts": {
-        "test": "grunt grunticon_pigment:foo"
-    }
+  "name": "grunt-grunticon-pigment",
+  "description": "A collection of grunt tasks around filamentgroup's grunt-grunticon. Creates colourised versions of SVG images.",
+  "version": "0.2.8",
+  "license": "MIT",
+  "author": "Springload",
+  "homepage": "https://github.com/springload/grunticon-pigment",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/springload/grunticon-pigment"
+  },
+  "bugs": {
+    "url": "https://github.com/springload/grunticon-pigment/issues"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-copy": "~0.8.0",
+    "grunt-grunticon": "~2.2.0",
+    "grunt-dom-munger": "~3.4.0",
+    "grunt-svgmin": "~2.0.1",
+    "grunt-text-replace": "~0.4.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.13",
+    "jshint": "^2.9.4"
+  },
+  "peerDependencies": {
+    "grunt": ">=0.4.0"
+  },
+  "keywords": [
+    "grunt",
+    "gruntplugin",
+    "grunticon",
+    "icons",
+    "svg",
+    "fallback"
+  ],
+  "scripts": {
+    "lint": "jshint Gruntfile.js tasks/*.js",
+    "test": "grunt grunticon_pigment:foo"
+  }
 }
