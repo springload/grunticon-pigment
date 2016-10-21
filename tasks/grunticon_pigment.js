@@ -11,7 +11,6 @@
 module.exports = function(grunt) {
 
     var path = require( 'path' );
-    var os = require( 'os' );
     var pkg = grunt.file.readJSON( path.join( __dirname, "..", "package.json") );
 
     // The cool way to load your grunt tasks
@@ -24,7 +23,8 @@ module.exports = function(grunt) {
     });
     process.chdir(cwd);
 
-    grunt.registerMultiTask("grunticon_pigment", "A collection of grunt tasks around filamentgroup's grunt-grunticon. Creates colourised versions of svg images.", function() {
+    var description = "A collection of grunt tasks around filamentgroup's grunt-grunticon. Creates colourised versions of svg images.";
+    grunt.registerMultiTask("grunticon_pigment", description, function() {
 
         // get the config
         var config = this.options({
@@ -158,7 +158,7 @@ module.exports = function(grunt) {
                         $('svg').attr("viewBox", "0 0 " + icon_width + " " + (icon_height*icon_count) );
 
                         // duplicate root node for each colour
-                        for (var i in colors) {
+                        for (var i = 0; i < colors.length; i++) {
                             var offset = icon_height * (parseFloat(i)+1);
                             var color = colors[i];
                             var xlink = "<use xlink:href=\"#a\" y=\""+offset+"\" fill=\""+color+"\" />";
