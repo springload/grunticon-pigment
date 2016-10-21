@@ -40,3 +40,4 @@ IOS/www/
 .DS_Store
 ## Platform stuff
 platforms/**
+npm-debug.log
