@@ -12,11 +12,15 @@ module.exports = function(grunt) {
 
     // Project configuration.
     grunt.initConfig({
+        paths: {
+            grunticons: 'examples/',
+            css: 'result/',
+        },
+
         watch: {
             files: '<config:lint.files>',
             tasks: 'default'
         },
-
 
         grunticon_pigment: {
             foo: {
@@ -61,8 +65,8 @@ module.exports = function(grunt) {
                     },
 
                     // templates for css output and preview page
-                    template: "examples/default-css.hbs",
-                    previewTemplate:  "examples/preview-custom.hbs"
+                    template: "<%= paths.grunticons %>default-css.hbs",
+                    previewTemplate:  "<%= paths.grunticons %>preview.hbs"
 
                 }
             }
