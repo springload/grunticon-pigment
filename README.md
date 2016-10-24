@@ -415,5 +415,7 @@ npm run test
 
 ## Release History
 
+* Version 1.0.0: Re-removed postinstall script.
+* Version 0.2.8: Reintroduced postinstall script.
 * Version 0.2.5: Upgraded npm dependencies and removed postinstall script.
 * Version 0.2.0: First stable release.
