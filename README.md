@@ -1,4 +1,4 @@
-grunt-grunticon-pigment [![npm](https://img.shields.io/npm/v/grunt-grunticon-pigment.svg?style=flat-square)](https://www.npmjs.com/package/grunt-grunticon-pigment) [![Build Status](https://img.shields.io/travis/springload/grunt-grunticon-pigment.svg?style=flat-square)](https://travis-ci.org/springload/grunt-grunticon-pigment)
+grunt-grunticon-pigment [![npm](https://img.shields.io/npm/v/grunt-grunticon-pigment.svg?style=flat-square)](https://www.npmjs.com/package/grunt-grunticon-pigment) [![Build Status](https://img.shields.io/travis/springload/grunticon-pigment.svg?style=flat-square)](https://travis-ci.org/springload/grunticon-pigment)
 ===========================
 
 > A collection of grunt tasks around filamentgroup's grunticon, that also creates colourised versions of svg images
