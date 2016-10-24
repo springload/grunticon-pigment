@@ -404,9 +404,16 @@ In the Save SVG dialog that opens up, there are lots of options. SVG has a ton o
 * If your files have `#`, `.`, `>`, or any other css selecting character in their names, they will likely be improperly processed.
 
 ## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+
+```js
+git clone git@github.com:springload/grunticon-pigment.git
+cd grunticon-pigment/
+nvm install
+npm install
+npm run test
+```
 
 ## Release History
 
-* Version 0.2.5: Upgraded npm dependencies and removed postinstall script
-* Version 0.2.0: First stable release
+* Version 0.2.5: Upgraded npm dependencies and removed postinstall script.
+* Version 0.2.0: First stable release.
