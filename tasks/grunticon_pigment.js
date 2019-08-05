@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     // The cool way to load your grunt tasks
     var cwd = process.cwd();
     process.chdir( path.join( __dirname, "..") );
-    Object.keys( pkg.dependencies ).forEach( function( dep ){
+    Object.keys( pkg.devDependencies ).forEach( function( dep ){
         if( dep.substring( 0, 6 ) === 'grunt-' ) {
             grunt.loadNpmTasks( dep );
         }
